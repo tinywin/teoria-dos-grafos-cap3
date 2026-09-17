@@ -26,24 +26,31 @@ O projeto avalia o impacto do desempenho computacional (tempo e espaço) entre d
 ```text
 .
 ├── dados/
-│   └── email-Eu-core.txt       # Base de dados real do SNAP
+│   ├── email-Eu-core.txt       # Base de dados real do SNAP
+│   └── exemplo.edges           # Arquivo de dados de exemplo
 ├── grafo/
-│   ├── base.py                 # Interface abstrata Grafo
-│   ├── matriz.py               # Representação por Matriz de Adjacência
-│   ├── lista.py                # Representação por Lista de Adjacência
-│   ├── geracao.py              # Gerador de grafos aleatórios (Erdos-Renyi)
-│   ├── triangulos.py           # Algoritmo de contagem de triângulos
-│   ├── leitura.py              # Módulo de leitura, construção e conferência
-│   ├── incidencia.py           # Construção e teste da matriz de incidência (Item 3)
-│   ├── medicao.py              # Benchmarks de tempo e espaço (Itens 4 e 5)
+│   ├── __init__.py             # Inicialização do pacote grafo
 │   ├── analise.py              # Análise de passos teóricos e ns/passo (Item 6)
-│   └── conjunto_real.py        # Processamento do dataset real (Item 7)
+│   ├── base.py                 # Interface abstrata Grafo
+│   ├── conferencia.py          # Funções de conferência estrutural de grafos
+│   ├── conjunto_real.py        # Processamento do dataset real (Item 7)
+│   ├── construcao.py           # Construção de grafos a partir de listas de arestas
+│   ├── geracao.py              # Gerador de grafos aleatórios (Erdos-Renyi)
+│   ├── incidencia.py           # Construção e teste da matriz de incidência (Item 3)
+│   ├── leitura.py              # Módulo de leitura de arquivos e pares de vértices
+│   ├── lista.py                # Representação por Lista de Adjacência
+│   ├── matriz.py               # Representação por Matriz de Adjacência
+│   ├── medicao.py              # Benchmarks de tempo e espaço (Itens 4 e 5)
+│   └── triangulos.py           # Algoritmo de contagem de triângulos
 ├── testes/
+│   ├── __init__.py             # Inicialização do pacote de testes
 │   └── test_figura31.py        # Testes unitários do pytest (Item 2)
+├── .gitignore                  # Arquivos ignorados pelo Git
+├── LICENSE                     # Licença de uso do código (MIT)
 ├── limpar_resultados.py        # Script utilitário para resetar resultados
-├── resultados.jsonl            # Registros das medições de desempenho
-├── relato-cap3.pdf             # Relatório final formatado de 1 página
-└── README.md                   # Documentação do projeto
+├── README.md                   # Documentação do projeto
+├── relato_lbh_cap3.pdf         # Relatório final formatado
+└── resultados.jsonl            # Registros brutos das medições de desempenho
 ```
 
 ---
