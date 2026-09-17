@@ -141,5 +141,3 @@ Estudante de Ciência da Computação — *Universidade Federal do Tocantins (UF
 GitHub: [@tinywin](https://www.google.com/search?q=https://github.com/tinywin)
 
 ```
-
-```
