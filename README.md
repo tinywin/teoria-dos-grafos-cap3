@@ -139,5 +139,3 @@ python -m grafo.conjunto_real
 Estudante de Ciência da Computação — *Universidade Federal do Tocantins (UFT)*
 
 GitHub: [@tinywin](https://www.google.com/search?q=https://github.com/tinywin)
-
-```
